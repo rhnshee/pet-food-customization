@@ -41,7 +41,7 @@ export default function Index() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center p-4">
       <div className="w-full max-w-6xl flex rounded-3xl shadow-2xl overflow-hidden bg-white">
         {/* Left side - Cute puppies image */}
-        <div className="hidden md:flex md:w-1/2 bg-gradient-to-br from-orange-200 to-orange-300 p-8 items-center justify-center">
+        <div className="hidden md:flex md:w-1/2 bg-gradient-to-br from-blue-200 to-blue-300 p-8 items-center justify-center">
           <div className="text-center">
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2F76bd3aeafd05477da53fceca5191bd57%2Ff79ecfb64c7a49bfb9bb5bc58a372675"
