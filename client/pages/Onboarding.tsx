@@ -40,9 +40,15 @@ export default function Onboarding() {
           {/* Customize Pet Food */}
           <Card className="text-center p-8 border-0 shadow-sm bg-white">
             <CardContent className="pt-6">
-              <div className="w-20 h-20 mx-auto mb-6 bg-blue-100 rounded-2xl flex items-center justify-center">
-                <div className="text-3xl">🐕</div>
-              </div>
+              <div
+                className="w-20 h-20 mx-auto mb-6 bg-blue-100 rounded-2xl flex items-center justify-center"
+                style={{
+                  backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F76bd3aeafd05477da53fceca5191bd57%2F246568aec982492f8d1dbcdf1b0ff488)',
+                  backgroundRepeat: 'no-repeat',
+                  backgroundPosition: 'center',
+                  backgroundSize: 'cover'
+                }}
+              />
               <h3 className="text-xl font-semibold text-gray-900 mb-4">
                 Customize Pet Food
               </h3>
@@ -56,12 +62,7 @@ export default function Onboarding() {
                 <span className="flex items-center gap-1 text-sm text-gray-500">
                   🐱 Cats
                 </span>
-                <span className="flex items-center gap-1 text-sm text-gray-500">
-                  🐠 Fish
-                </span>
-                <span className="flex items-center gap-1 text-sm text-gray-500">
-                  🐦 Birds
-                </span>
+
               </div>
             </CardContent>
           </Card>
@@ -69,9 +70,15 @@ export default function Onboarding() {
           {/* Manage Subscriptions */}
           <Card className="text-center p-8 border-0 shadow-sm bg-white">
             <CardContent className="pt-6">
-              <div className="w-20 h-20 mx-auto mb-6 bg-blue-100 rounded-2xl flex items-center justify-center">
-                <div className="text-3xl">📦</div>
-              </div>
+              <div
+                className="w-20 h-20 mx-auto mb-6 bg-blue-100 rounded-2xl flex items-center justify-center"
+                style={{
+                  backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F76bd3aeafd05477da53fceca5191bd57%2F5d0443a197874ff59333d1625b6c184a)',
+                  backgroundRepeat: 'no-repeat',
+                  backgroundPosition: 'center',
+                  backgroundSize: 'cover'
+                }}
+              />
               <h3 className="text-xl font-semibold text-gray-900 mb-4">
                 Manage Subscriptions
               </h3>
@@ -104,9 +111,15 @@ export default function Onboarding() {
           {/* Track Orders */}
           <Card className="text-center p-8 border-0 shadow-sm bg-white">
             <CardContent className="pt-6">
-              <div className="w-20 h-20 mx-auto mb-6 bg-green-100 rounded-2xl flex items-center justify-center">
-                <div className="text-3xl">📱</div>
-              </div>
+              <div
+                className="w-20 h-20 mx-auto mb-6 bg-green-100 rounded-2xl flex items-center justify-center"
+                style={{
+                  backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F76bd3aeafd05477da53fceca5191bd57%2F5ffe82e5527e45c594acbfe5e5dd90ad)',
+                  backgroundRepeat: 'no-repeat',
+                  backgroundPosition: 'center',
+                  backgroundSize: 'cover'
+                }}
+              />
               <h3 className="text-xl font-semibold text-gray-900 mb-4">
                 Track Orders
               </h3>
