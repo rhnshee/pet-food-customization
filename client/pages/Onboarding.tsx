@@ -8,8 +8,10 @@ export default function Onboarding() {
       <header className="bg-white border-b border-gray-200 px-6 py-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-orange-500 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">🐾</span>
+            <div className="w-8 h-8 flex items-center justify-center">
+              <svg className="w-6 h-6 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C12 2 15 5 15 8.5C15 10.5 13.5 12 12 12C10.5 12 9 10.5 9 8.5C9 5 12 2 12 2ZM7 9C7 9 9 11 9 13C9 14.1 8.1 15 7 15C5.9 15 5 14.1 5 13C5 11 7 9 7 9ZM17 9C17 9 19 11 19 13C19 14.1 18.1 15 17 15C15.9 15 15 14.1 15 13C15 11 17 9 17 9ZM4 17C4 17 6 19 6 21C6 22.1 5.1 23 4 23C2.9 23 2 22.1 2 21C2 19 4 17 4 17ZM20 17C20 17 22 19 22 21C22 22.1 21.1 23 20 23C18.9 23 18 22.1 18 21C18 19 20 17 20 17Z"/>
+              </svg>
             </div>
             <span className="text-xl font-bold text-gray-800">PetFoodCustom</span>
           </div>
@@ -38,7 +40,7 @@ export default function Onboarding() {
           {/* Customize Pet Food */}
           <Card className="text-center p-8 border-0 shadow-sm bg-white">
             <CardContent className="pt-6">
-              <div className="w-20 h-20 mx-auto mb-6 bg-orange-100 rounded-2xl flex items-center justify-center">
+              <div className="w-20 h-20 mx-auto mb-6 bg-blue-100 rounded-2xl flex items-center justify-center">
                 <div className="text-3xl">🐕</div>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">
@@ -146,7 +148,7 @@ export default function Onboarding() {
             <div className="grid grid-cols-2 gap-6">
               <Card className="text-center p-6 border-0 shadow-sm bg-white">
                 <CardContent className="pt-4">
-                  <div className="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-orange-400 to-red-500 rounded-2xl flex items-center justify-center">
+                  <div className="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-2xl flex items-center justify-center">
                     <div className="w-16 h-16 bg-white rounded-xl flex items-center justify-center">
                       <div className="text-2xl">🥘</div>
                     </div>
@@ -188,7 +190,7 @@ export default function Onboarding() {
 
               <Card className="text-center p-6 border-0 shadow-sm bg-white">
                 <CardContent className="pt-4">
-                  <div className="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-2xl flex items-center justify-center">
+                  <div className="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-2xl flex items-center justify-center">
                     <div className="w-16 h-16 bg-white rounded-xl flex items-center justify-center">
                       <div className="text-2xl">🐟</div>
                     </div>
@@ -218,7 +220,7 @@ export default function Onboarding() {
             Ready to get started?
           </h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 text-lg font-medium rounded-lg">
+            <Button className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 text-lg font-medium rounded-lg">
               Explore PetFoodCustom
             </Button>
             <Button variant="outline" className="border-gray-300 text-gray-700 px-8 py-3 text-lg font-medium rounded-lg">
