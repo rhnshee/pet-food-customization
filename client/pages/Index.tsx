@@ -14,6 +14,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 
 export default function Index() {
+  const navigate = useNavigate();
   const [rememberMe, setRememberMe] = useState(false);
   const [loginForm, setLoginForm] = useState({
     username: "",
