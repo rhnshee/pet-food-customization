@@ -42,7 +42,7 @@ export default function Index() {
         <div className="hidden md:flex md:w-1/2 bg-gradient-to-br from-orange-200 to-orange-300 p-8 items-center justify-center">
           <div className="text-center">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2F76bd3aeafd05477da53fceca5191bd57%2Fb25d55c1ef944dbf82f3b537485ddae0?format=webp&width=800"
+              src="https://cdn.builder.io/api/v1/image/assets%2F76bd3aeafd05477da53fceca5191bd57%2Ff79ecfb64c7a49bfb9bb5bc58a372675"
               alt="Two adorable golden retriever puppies eating from pet food bowls"
               className="w-full max-w-md rounded-2xl shadow-lg mb-6"
             />
