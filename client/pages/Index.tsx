@@ -38,7 +38,7 @@ export default function Index() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 to-orange-100 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center p-4">
       <div className="w-full max-w-6xl flex rounded-3xl shadow-2xl overflow-hidden bg-white">
         {/* Left side - Cute puppies image */}
         <div className="hidden md:flex md:w-1/2 bg-gradient-to-br from-orange-200 to-orange-300 p-8 items-center justify-center">
