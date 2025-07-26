@@ -48,7 +48,7 @@ export default function Index() {
         </div>
 
         {/* Right side - Auth forms */}
-        <div className="w-full lg:w-1/2 p-8 lg:p-12 flex items-center justify-center">
+        <div className="w-full md:w-1/2 p-8 md:p-12 flex items-center justify-center">
           <div className="w-full max-w-md">
             {/* Logo and brand */}
             <div className="text-center mb-8">
