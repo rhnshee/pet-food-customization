@@ -1,5 +1,11 @@
 import { useState } from "react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -10,13 +16,13 @@ export default function Index() {
   const [rememberMe, setRememberMe] = useState(false);
   const [loginForm, setLoginForm] = useState({
     username: "",
-    password: ""
+    password: "",
   });
   const [signupForm, setSignupForm] = useState({
     username: "",
     email: "",
     password: "",
-    confirmPassword: ""
+    confirmPassword: "",
   });
 
   const handleLogin = (e: React.FormEvent) => {
@@ -35,14 +41,18 @@ export default function Index() {
         {/* Left side - Cute puppies image */}
         <div className="hidden md:flex md:w-1/2 bg-gradient-to-br from-orange-200 to-orange-300 p-8 items-center justify-center">
           <div className="text-center">
-            <img 
+            <img
               src="https://cdn.builder.io/api/v1/image/assets%2F76bd3aeafd05477da53fceca5191bd57%2Fb25d55c1ef944dbf82f3b537485ddae0?format=webp&width=800"
               alt="Two adorable golden retriever puppies eating from pet food bowls"
               className="w-full max-w-md rounded-2xl shadow-lg mb-6"
             />
             <div className="text-orange-800">
-              <h2 className="text-2xl font-bold mb-2">Welcome to PetFoodCustom</h2>
-              <p className="text-lg opacity-90">Customized nutrition for your furry friends</p>
+              <h2 className="text-2xl font-bold mb-2">
+                Welcome to PetFoodCustom
+              </h2>
+              <p className="text-lg opacity-90">
+                Customized nutrition for your furry friends
+              </p>
             </div>
           </div>
         </div>
@@ -56,7 +66,9 @@ export default function Index() {
                 <div className="w-8 h-8 bg-orange-500 rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold text-lg">🐾</span>
                 </div>
-                <span className="text-xl font-bold text-gray-800">PetFoodCustom</span>
+                <span className="text-xl font-bold text-gray-800">
+                  PetFoodCustom
+                </span>
               </div>
             </div>
 
@@ -84,7 +96,10 @@ export default function Index() {
                   <CardContent className="px-0">
                     <form onSubmit={handleLogin} className="space-y-4">
                       <div className="space-y-2">
-                        <Label htmlFor="login-username" className="text-sm font-medium text-gray-700">
+                        <Label
+                          htmlFor="login-username"
+                          className="text-sm font-medium text-gray-700"
+                        >
                           Username
                         </Label>
                         <Input
@@ -92,13 +107,21 @@ export default function Index() {
                           type="text"
                           placeholder="Enter your username"
                           value={loginForm.username}
-                          onChange={(e) => setLoginForm({...loginForm, username: e.target.value})}
+                          onChange={(e) =>
+                            setLoginForm({
+                              ...loginForm,
+                              username: e.target.value,
+                            })
+                          }
                           className="h-12 px-4 border-gray-200 focus:border-orange-400 focus:ring-orange-400"
                         />
                       </div>
 
                       <div className="space-y-2">
-                        <Label htmlFor="login-password" className="text-sm font-medium text-gray-700">
+                        <Label
+                          htmlFor="login-password"
+                          className="text-sm font-medium text-gray-700"
+                        >
                           Password
                         </Label>
                         <Input
@@ -106,7 +129,12 @@ export default function Index() {
                           type="password"
                           placeholder="Enter your password"
                           value={loginForm.password}
-                          onChange={(e) => setLoginForm({...loginForm, password: e.target.value})}
+                          onChange={(e) =>
+                            setLoginForm({
+                              ...loginForm,
+                              password: e.target.value,
+                            })
+                          }
                           className="h-12 px-4 border-gray-200 focus:border-orange-400 focus:ring-orange-400"
                         />
                       </div>
@@ -116,9 +144,14 @@ export default function Index() {
                           <Checkbox
                             id="remember-me"
                             checked={rememberMe}
-                            onCheckedChange={(checked) => setRememberMe(checked as boolean)}
+                            onCheckedChange={(checked) =>
+                              setRememberMe(checked as boolean)
+                            }
                           />
-                          <Label htmlFor="remember-me" className="text-sm text-gray-600">
+                          <Label
+                            htmlFor="remember-me"
+                            className="text-sm text-gray-600"
+                          >
                             Remember me
                           </Label>
                         </div>
@@ -145,7 +178,9 @@ export default function Index() {
                           type="button"
                           className="text-sm text-orange-600 hover:text-orange-700 font-medium"
                           onClick={() => {
-                            const signupTab = document.querySelector('[value="signup"]') as HTMLElement;
+                            const signupTab = document.querySelector(
+                              '[value="signup"]',
+                            ) as HTMLElement;
                             signupTab?.click();
                           }}
                         >
@@ -171,7 +206,10 @@ export default function Index() {
                   <CardContent className="px-0">
                     <form onSubmit={handleSignup} className="space-y-4">
                       <div className="space-y-2">
-                        <Label htmlFor="signup-username" className="text-sm font-medium text-gray-700">
+                        <Label
+                          htmlFor="signup-username"
+                          className="text-sm font-medium text-gray-700"
+                        >
                           Username
                         </Label>
                         <Input
@@ -179,13 +217,21 @@ export default function Index() {
                           type="text"
                           placeholder="Choose a username"
                           value={signupForm.username}
-                          onChange={(e) => setSignupForm({...signupForm, username: e.target.value})}
+                          onChange={(e) =>
+                            setSignupForm({
+                              ...signupForm,
+                              username: e.target.value,
+                            })
+                          }
                           className="h-12 px-4 border-gray-200 focus:border-orange-400 focus:ring-orange-400"
                         />
                       </div>
 
                       <div className="space-y-2">
-                        <Label htmlFor="signup-email" className="text-sm font-medium text-gray-700">
+                        <Label
+                          htmlFor="signup-email"
+                          className="text-sm font-medium text-gray-700"
+                        >
                           Email
                         </Label>
                         <Input
@@ -193,13 +239,21 @@ export default function Index() {
                           type="email"
                           placeholder="Enter your email"
                           value={signupForm.email}
-                          onChange={(e) => setSignupForm({...signupForm, email: e.target.value})}
+                          onChange={(e) =>
+                            setSignupForm({
+                              ...signupForm,
+                              email: e.target.value,
+                            })
+                          }
                           className="h-12 px-4 border-gray-200 focus:border-orange-400 focus:ring-orange-400"
                         />
                       </div>
 
                       <div className="space-y-2">
-                        <Label htmlFor="signup-password" className="text-sm font-medium text-gray-700">
+                        <Label
+                          htmlFor="signup-password"
+                          className="text-sm font-medium text-gray-700"
+                        >
                           Password
                         </Label>
                         <Input
@@ -207,13 +261,21 @@ export default function Index() {
                           type="password"
                           placeholder="Create a password"
                           value={signupForm.password}
-                          onChange={(e) => setSignupForm({...signupForm, password: e.target.value})}
+                          onChange={(e) =>
+                            setSignupForm({
+                              ...signupForm,
+                              password: e.target.value,
+                            })
+                          }
                           className="h-12 px-4 border-gray-200 focus:border-orange-400 focus:ring-orange-400"
                         />
                       </div>
 
                       <div className="space-y-2">
-                        <Label htmlFor="signup-confirm-password" className="text-sm font-medium text-gray-700">
+                        <Label
+                          htmlFor="signup-confirm-password"
+                          className="text-sm font-medium text-gray-700"
+                        >
                           Confirm Password
                         </Label>
                         <Input
@@ -221,7 +283,12 @@ export default function Index() {
                           type="password"
                           placeholder="Confirm your password"
                           value={signupForm.confirmPassword}
-                          onChange={(e) => setSignupForm({...signupForm, confirmPassword: e.target.value})}
+                          onChange={(e) =>
+                            setSignupForm({
+                              ...signupForm,
+                              confirmPassword: e.target.value,
+                            })
+                          }
                           className="h-12 px-4 border-gray-200 focus:border-orange-400 focus:ring-orange-400"
                         />
                       </div>
@@ -241,7 +308,9 @@ export default function Index() {
                           type="button"
                           className="text-sm text-orange-600 hover:text-orange-700 font-medium"
                           onClick={() => {
-                            const loginTab = document.querySelector('[value="login"]') as HTMLElement;
+                            const loginTab = document.querySelector(
+                              '[value="login"]',
+                            ) as HTMLElement;
                             loginTab?.click();
                           }}
                         >
