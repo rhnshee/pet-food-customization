@@ -48,7 +48,7 @@ export default function Index() {
               alt="Two adorable golden retriever puppies eating from pet food bowls"
               className="w-full max-w-md rounded-2xl shadow-lg mb-6"
             />
-            <div className="text-orange-800">
+            <div className="text-blue-800">
               <h2 className="text-2xl font-bold mb-2">
                 Welcome to PetFoodCustom
               </h2>
