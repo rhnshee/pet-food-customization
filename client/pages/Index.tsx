@@ -65,8 +65,8 @@ export default function Index() {
             {/* Logo and brand */}
             <div className="text-center mb-8">
               <div className="flex items-center justify-center gap-2 mb-4">
-                <div className="w-8 h-8 bg-orange-500 rounded-lg flex items-center justify-center">
-                  <p>🐶</p>
+                <div className="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center">
+                  <p>🐾</p>
                 </div>
                 <span className="text-xl font-bold text-gray-800">
                   PetFoodCustom
