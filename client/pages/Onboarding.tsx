@@ -3,6 +3,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { useNavigate } from "react-router-dom";
 
 export default function Onboarding() {
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
