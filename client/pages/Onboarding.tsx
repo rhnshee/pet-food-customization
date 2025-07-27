@@ -158,62 +158,62 @@ export default function Onboarding() {
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Food Options Grid */}
-            <div className="grid grid-cols-2 gap-6">
-              <Card className="text-center p-6 border-0 shadow-sm bg-white">
-                <CardContent className="pt-4">
-                  <div className="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-2xl flex items-center justify-center">
-                    <div className="w-16 h-16 bg-white rounded-xl flex items-center justify-center">
-                      <div className="text-2xl">🥘</div>
-                    </div>
-                  </div>
-                  <h4 className="font-semibold text-gray-900 mb-1">
-                    Chicken & Veggie Mix
-                  </h4>
-                  <p className="text-sm text-gray-500">For Dogs</p>
-                </CardContent>
-              </Card>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="text-center">
+                <div className="w-32 h-32 mx-auto mb-3 rounded-2xl overflow-hidden shadow-sm">
+                  <img
+                    src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?w=200&h=200&fit=crop&crop=center"
+                    alt="Chicken & Veggie Mix"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h4 className="font-semibold text-gray-900 text-sm mb-1">
+                  Chicken & Veggie Mix
+                </h4>
+                <p className="text-xs text-gray-500">For Dogs</p>
+              </div>
 
-              <Card className="text-center p-6 border-0 shadow-sm bg-white">
-                <CardContent className="pt-4">
-                  <div className="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-pink-400 to-purple-500 rounded-2xl flex items-center justify-center">
-                    <div className="w-16 h-16 bg-white rounded-xl flex items-center justify-center">
-                      <div className="text-2xl">🐟</div>
-                    </div>
-                  </div>
-                  <h4 className="font-semibold text-gray-900 mb-1">
-                    Salmon & Rice Blend
-                  </h4>
-                  <p className="text-sm text-gray-500">For Cats</p>
-                </CardContent>
-              </Card>
+              <div className="text-center">
+                <div className="w-32 h-32 mx-auto mb-3 rounded-2xl overflow-hidden shadow-sm">
+                  <img
+                    src="https://images.unsplash.com/photo-1554168046-e3173be38f39?w=200&h=200&fit=crop&crop=center"
+                    alt="Salmon & Rice Blend"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h4 className="font-semibold text-gray-900 text-sm mb-1">
+                  Salmon & Rice Blend
+                </h4>
+                <p className="text-xs text-gray-500">For Cats</p>
+              </div>
 
-              <Card className="text-center p-6 border-0 shadow-sm bg-white">
-                <CardContent className="pt-4">
-                  <div className="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-green-400 to-blue-500 rounded-2xl flex items-center justify-center">
-                    <div className="w-16 h-16 bg-white rounded-xl flex items-center justify-center">
-                      <div className="text-2xl">🥬</div>
-                    </div>
-                  </div>
-                  <h4 className="font-semibold text-gray-900 mb-1">
-                    Grain-Free Turkey
-                  </h4>
-                  <p className="text-sm text-gray-500">For Dogs</p>
-                </CardContent>
-              </Card>
+              <div className="text-center">
+                <div className="w-32 h-32 mx-auto mb-3 rounded-2xl overflow-hidden shadow-sm">
+                  <img
+                    src="https://images.unsplash.com/photo-1565727830114-19a7045a6ea8?w=200&h=200&fit=crop&crop=center"
+                    alt="Grain-Free Turkey"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h4 className="font-semibold text-gray-900 text-sm mb-1">
+                  Grain-Free Turkey
+                </h4>
+                <p className="text-xs text-gray-500">For Dogs</p>
+              </div>
 
-              <Card className="text-center p-6 border-0 shadow-sm bg-white">
-                <CardContent className="pt-4">
-                  <div className="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-2xl flex items-center justify-center">
-                    <div className="w-16 h-16 bg-white rounded-xl flex items-center justify-center">
-                      <div className="text-2xl">🐟</div>
-                    </div>
-                  </div>
-                  <h4 className="font-semibold text-gray-900 mb-1">
-                    Tuna & Whitefish Pate
-                  </h4>
-                  <p className="text-sm text-gray-500">For Cats</p>
-                </CardContent>
-              </Card>
+              <div className="text-center">
+                <div className="w-32 h-32 mx-auto mb-3 rounded-2xl overflow-hidden shadow-sm">
+                  <img
+                    src="https://images.unsplash.com/photo-1506297515101-8c8b01ffc3c3?w=200&h=200&fit=crop&crop=center"
+                    alt="Tuna & Whitefish Pate"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h4 className="font-semibold text-gray-900 text-sm mb-1">
+                  Tuna & Whitefish Pate
+                </h4>
+                <p className="text-xs text-gray-500">For Cats</p>
+              </div>
             </div>
 
             {/* Pet Image */}
