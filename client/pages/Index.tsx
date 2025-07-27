@@ -1,341 +1,254 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Checkbox } from "@/components/ui/checkbox";
-import { Label } from "@/components/ui/label";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function Index() {
-  const navigate = useNavigate();
-  const [rememberMe, setRememberMe] = useState(false);
-  const [loginForm, setLoginForm] = useState({
-    username: "",
-    password: "",
-  });
-  const [signupForm, setSignupForm] = useState({
-    username: "",
-    email: "",
-    password: "",
-    confirmPassword: "",
-  });
-
-  const handleLogin = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Login:", loginForm);
-  };
-
-  const handleSignup = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Signup:", signupForm);
-  };
-
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center p-4">
-      <div className="w-full max-w-6xl flex rounded-3xl shadow-2xl overflow-hidden bg-white">
-        {/* Left side - Cute puppies image */}
-        <div className="hidden md:flex md:w-1/2 bg-gradient-to-br from-blue-200 to-blue-300 p-8 items-center justify-center">
-          <div className="text-center">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets%2F76bd3aeafd05477da53fceca5191bd57%2Ff79ecfb64c7a49bfb9bb5bc58a372675"
-              alt="Two adorable golden retriever puppies eating from pet food bowls"
-              className="w-full max-w-md rounded-2xl shadow-lg mb-6"
-            />
-            <div className="text-blue-800">
-              <h2 className="text-2xl font-bold mb-2">
-                Welcome to PetFoodCustom
-              </h2>
-              <p className="text-lg opacity-90">
-                Customized nutrition for your furry friends
-              </p>
+    <div className="min-h-screen bg-gray-50">
+      {/* Header */}
+      <header className="bg-white border-b border-gray-200 px-6 py-4">
+        <div className="max-w-7xl mx-auto flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <div className="w-8 h-8 flex items-center justify-center">
+              <svg className="w-6 h-6 text-orange-500" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C12 2 15 5 15 8.5C15 10.5 13.5 12 12 12C10.5 12 9 10.5 9 8.5C9 5 12 2 12 2ZM7 9C7 9 9 11 9 13C9 14.1 8.1 15 7 15C5.9 15 5 14.1 5 13C5 11 7 9 7 9ZM17 9C17 9 19 11 19 13C19 14.1 18.1 15 17 15C15.9 15 15 14.1 15 13C15 11 17 9 17 9ZM4 17C4 17 6 19 6 21C6 22.1 5.1 23 4 23C2.9 23 2 22.1 2 21C2 19 4 17 4 17ZM20 17C20 17 22 19 22 21C22 22.1 21.1 23 20 23C18.9 23 18 22.1 18 21C18 19 20 17 20 17Z"/>
+              </svg>
             </div>
+            <span className="text-xl font-bold text-gray-800">PetFoodCustom</span>
+          </div>
+          <div className="flex items-center gap-4">
+            <Button variant="ghost" className="text-gray-600">
+              Sign Up / Login
+            </Button>
           </div>
         </div>
+      </header>
 
-        {/* Right side - Auth forms */}
-        <div className="w-full md:w-1/2 p-8 md:p-12 flex items-center justify-center">
-          <div className="w-full max-w-md">
-            {/* Logo and brand */}
-            <div className="text-center mb-8">
-              <div className="flex items-center justify-center gap-2 mb-4">
-                <div className="w-8 h-8 flex items-center justify-center">
-                  <svg className="w-6 h-6 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2C12 2 15 5 15 8.5C15 10.5 13.5 12 12 12C10.5 12 9 10.5 9 8.5C9 5 12 2 12 2ZM7 9C7 9 9 11 9 13C9 14.1 8.1 15 7 15C5.9 15 5 14.1 5 13C5 11 7 9 7 9ZM17 9C17 9 19 11 19 13C19 14.1 18.1 15 17 15C15.9 15 15 14.1 15 13C15 11 17 9 17 9ZM4 17C4 17 6 19 6 21C6 22.1 5.1 23 4 23C2.9 23 2 22.1 2 21C2 19 4 17 4 17ZM20 17C20 17 22 19 22 21C22 22.1 21.1 23 20 23C18.9 23 18 22.1 18 21C18 19 20 17 20 17Z"/>
-                  </svg>
-                </div>
-                <span className="text-xl font-bold text-gray-800">
-                  PetFoodCustom
+      {/* Main Content */}
+      <main className="max-w-7xl mx-auto px-6 py-12">
+        {/* Welcome Section */}
+        <div className="text-center mb-16">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+            Welcome to Personalized Pet Nutrition
+          </h1>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Tailored meals for your furry friends, delivered to your doorstep
+          </p>
+        </div>
+
+        {/* Features Section */}
+        <div className="grid md:grid-cols-3 gap-6 mb-20">
+          {/* Customize Pet Food */}
+          <Card className="text-center p-6 border-0 shadow-sm bg-white hover:shadow-md transition-shadow">
+            <CardContent className="pt-4">
+              <div
+                className="w-20 h-20 mx-auto mb-6 bg-blue-100 rounded-2xl flex items-center justify-center"
+                style={{
+                  backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F76bd3aeafd05477da53fceca5191bd57%2F246568aec982492f8d1dbcdf1b0ff488)',
+                  backgroundRepeat: 'no-repeat',
+                  backgroundPosition: 'center',
+                  backgroundSize: 'cover'
+                }}
+              />
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                Customize Pet Food
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Create personalized meal plans based on your pet's breed, age, weight, and dietary needs. Choose from premium ingredients for optimal nutrition.
+              </p>
+              <div className="flex items-center justify-center gap-4 mt-6">
+                <span className="flex items-center gap-1 text-sm text-gray-500">
+                  🐕 Dogs
+                </span>
+                <span className="flex items-center gap-1 text-sm text-gray-500">
+                  🐱 Cats
+                </span>
+                <span className="flex items-center gap-1 text-sm text-gray-500">
+                  🐠 Fish
+                </span>
+                <span className="flex items-center gap-1 text-sm text-gray-500">
+                  🐦 Birds
                 </span>
               </div>
-              <Button
-                onClick={() => navigate("/onboarding")}
-                variant="outline"
-                className="mb-4 w-full border-blue-300 text-blue-600 hover:bg-blue-50"
-              >
-                🚀 View Demo - Explore PetFoodCustom
-              </Button>
+            </CardContent>
+          </Card>
+
+          {/* Manage Subscriptions */}
+          <Card className="text-center p-6 border-0 shadow-sm bg-white hover:shadow-md transition-shadow">
+            <CardContent className="pt-4">
+              <div
+                className="w-20 h-20 mx-auto mb-6 bg-blue-100 rounded-2xl flex items-center justify-center"
+                style={{
+                  backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F76bd3aeafd05477da53fceca5191bd57%2F5d0443a197874ff59333d1625b6c184a)',
+                  backgroundRepeat: 'no-repeat',
+                  backgroundPosition: 'center',
+                  backgroundSize: 'cover'
+                }}
+              />
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                Manage Subscriptions
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Set up flexible delivery schedules that work for you. Easily pause, skip, or modify your subscription anytime through your account dashboard.
+              </p>
+              <div className="flex items-center justify-center gap-6 mt-6">
+                <div className="text-center">
+                  <div className="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center mx-auto mb-1">
+                    <span className="text-red-600 text-xs font-semibold">W</span>
+                  </div>
+                  <span className="text-xs text-gray-500">Weekly</span>
+                </div>
+                <div className="text-center">
+                  <div className="w-8 h-8 bg-yellow-100 rounded-lg flex items-center justify-center mx-auto mb-1">
+                    <span className="text-yellow-600 text-xs font-semibold">B</span>
+                  </div>
+                  <span className="text-xs text-gray-500">Bi-weekly</span>
+                </div>
+                <div className="text-center">
+                  <div className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-1">
+                    <span className="text-green-600 text-xs font-semibold">M</span>
+                  </div>
+                  <span className="text-xs text-gray-500">Monthly</span>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Track Orders */}
+          <Card className="text-center p-6 border-0 shadow-sm bg-white hover:shadow-md transition-shadow">
+            <CardContent className="pt-4">
+              <div
+                className="w-20 h-20 mx-auto mb-6 bg-green-100 rounded-2xl flex items-center justify-center"
+                style={{
+                  backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F76bd3aeafd05477da53fceca5191bd57%2F5ffe82e5527e45c594acbfe5e5dd90ad)',
+                  backgroundRepeat: 'no-repeat',
+                  backgroundPosition: 'center',
+                  backgroundSize: 'cover'
+                }}
+              />
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                Track Orders
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Monitor your deliveries in real-time and access your complete order history. Review past purchases and easily reorder your pet's favorites.
+              </p>
+              <div className="mt-6 bg-gray-50 rounded-lg p-4">
+                <div className="flex items-center justify-between text-sm">
+                  <span className="text-gray-600">Order #23571</span>
+                  <span className="text-green-600 font-medium">In Transit</span>
+                </div>
+                <div className="mt-2">
+                  <div className="w-full bg-gray-200 rounded-full h-2">
+                    <div className="bg-green-500 h-2 rounded-full w-3/4"></div>
+                  </div>
+                  <div className="flex justify-between text-xs text-gray-500 mt-1">
+                    <span>Shipped</span>
+                    <span>Arriving Tomorrow</span>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        {/* Popular Pet Food Options */}
+        <div className="mb-16">
+          <div className="mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Popular Pet Food Options
+            </h2>
+            <p className="text-gray-600 max-w-2xl">
+              Our most loved recipes crafted with premium ingredients to keep your pets healthy and happy.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            {/* Food Options Grid */}
+            <div className="grid grid-cols-2 gap-4">
+              <div className="text-center">
+                <div className="w-32 h-32 mx-auto mb-3 rounded-2xl overflow-hidden shadow-sm">
+                  <img
+                    src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?w=200&h=200&fit=crop&crop=center"
+                    alt="Chicken & Veggie Mix"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h4 className="font-semibold text-gray-900 text-sm mb-1">
+                  Chicken & Veggie Mix
+                </h4>
+                <p className="text-xs text-gray-500">For Dogs</p>
+              </div>
+
+              <div className="text-center">
+                <div className="w-32 h-32 mx-auto mb-3 rounded-2xl overflow-hidden shadow-sm">
+                  <img
+                    src="https://images.unsplash.com/photo-1554168046-e3173be38f39?w=200&h=200&fit=crop&crop=center"
+                    alt="Salmon & Rice Blend"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h4 className="font-semibold text-gray-900 text-sm mb-1">
+                  Salmon & Rice Blend
+                </h4>
+                <p className="text-xs text-gray-500">For Cats</p>
+              </div>
+
+              <div className="text-center">
+                <div className="w-32 h-32 mx-auto mb-3 rounded-2xl overflow-hidden shadow-sm">
+                  <img
+                    src="https://images.unsplash.com/photo-1565727830114-19a7045a6ea8?w=200&h=200&fit=crop&crop=center"
+                    alt="Grain-Free Turkey"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h4 className="font-semibold text-gray-900 text-sm mb-1">
+                  Grain-Free Turkey
+                </h4>
+                <p className="text-xs text-gray-500">For Dogs</p>
+              </div>
+
+              <div className="text-center">
+                <div className="w-32 h-32 mx-auto mb-3 rounded-2xl overflow-hidden shadow-sm">
+                  <img
+                    src="https://images.unsplash.com/photo-1506297515101-8c8b01ffc3c3?w=200&h=200&fit=crop&crop=center"
+                    alt="Tuna & Whitefish Pate"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h4 className="font-semibold text-gray-900 text-sm mb-1">
+                  Tuna & Whitefish Pate
+                </h4>
+                <p className="text-xs text-gray-500">For Cats</p>
+              </div>
             </div>
 
-            <Tabs defaultValue="login" className="w-full">
-              <TabsList className="grid w-full grid-cols-2 mb-6">
-                <TabsTrigger value="login" className="text-sm font-medium">
-                  Login
-                </TabsTrigger>
-                <TabsTrigger value="signup" className="text-sm font-medium">
-                  Sign Up
-                </TabsTrigger>
-              </TabsList>
-
-              {/* Login Tab */}
-              <TabsContent value="login">
-                <Card className="border-0 shadow-none">
-                  <CardHeader className="text-center px-0 pb-6">
-                    <CardTitle className="text-2xl font-bold text-gray-800">
-                      Welcome Back!
-                    </CardTitle>
-                    <CardDescription className="text-gray-600">
-                      Sign in to your account and get back to our services!
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent className="px-0">
-                    <form onSubmit={handleLogin} className="space-y-4">
-                      <div className="space-y-2">
-                        <Label
-                          htmlFor="login-username"
-                          className="text-sm font-medium text-gray-700"
-                        >
-                          Username
-                        </Label>
-                        <Input
-                          id="login-username"
-                          type="text"
-                          placeholder="Enter your username"
-                          value={loginForm.username}
-                          onChange={(e) =>
-                            setLoginForm({
-                              ...loginForm,
-                              username: e.target.value,
-                            })
-                          }
-                          className="h-12 px-4 border-gray-200 focus:border-blue-400 focus:ring-blue-400"
-                        />
-                      </div>
-
-                      <div className="space-y-2">
-                        <Label
-                          htmlFor="login-password"
-                          className="text-sm font-medium text-gray-700"
-                        >
-                          Password
-                        </Label>
-                        <Input
-                          id="login-password"
-                          type="password"
-                          placeholder="Enter your password"
-                          value={loginForm.password}
-                          onChange={(e) =>
-                            setLoginForm({
-                              ...loginForm,
-                              password: e.target.value,
-                            })
-                          }
-                          className="h-12 px-4 border-gray-200 focus:border-blue-400 focus:ring-blue-400"
-                        />
-                      </div>
-
-                      <div className="flex items-center justify-between">
-                        <div className="flex items-center space-x-2">
-                          <Checkbox
-                            id="remember-me"
-                            checked={rememberMe}
-                            onCheckedChange={(checked) =>
-                              setRememberMe(checked as boolean)
-                            }
-                          />
-                          <Label
-                            htmlFor="remember-me"
-                            className="text-sm text-gray-600"
-                          >
-                            Remember me
-                          </Label>
-                        </div>
-                        <button
-                          type="button"
-                          className="text-sm text-blue-600 hover:text-blue-700 font-medium"
-                        >
-                          Forgot password?
-                        </button>
-                      </div>
-
-                      <Button
-                        type="submit"
-                        className="w-full h-12 bg-blue-500 hover:bg-blue-600 text-white font-medium text-base rounded-lg mt-6"
-                      >
-                        Login
-                      </Button>
-
-                      <div className="text-center mt-6">
-                        <span className="text-sm text-gray-600">
-                          Don't have an account?{" "}
-                        </span>
-                        <button
-                          type="button"
-                          className="text-sm text-blue-600 hover:text-blue-700 font-medium"
-                          onClick={() => {
-                            const signupTab = document.querySelector(
-                              '[value="signup"]',
-                            ) as HTMLElement;
-                            signupTab?.click();
-                          }}
-                        >
-                          Sign up
-                        </button>
-                      </div>
-                    </form>
-                  </CardContent>
-                </Card>
-              </TabsContent>
-
-              {/* Signup Tab */}
-              <TabsContent value="signup">
-                <Card className="border-0 shadow-none">
-                  <CardHeader className="text-center px-0 pb-6">
-                    <CardTitle className="text-2xl font-bold text-gray-800">
-                      Create Account
-                    </CardTitle>
-                    <CardDescription className="text-gray-600">
-                      Join us and start customizing your pet's nutrition!
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent className="px-0">
-                    <form onSubmit={handleSignup} className="space-y-4">
-                      <div className="space-y-2">
-                        <Label
-                          htmlFor="signup-username"
-                          className="text-sm font-medium text-gray-700"
-                        >
-                          Username
-                        </Label>
-                        <Input
-                          id="signup-username"
-                          type="text"
-                          placeholder="Choose a username"
-                          value={signupForm.username}
-                          onChange={(e) =>
-                            setSignupForm({
-                              ...signupForm,
-                              username: e.target.value,
-                            })
-                          }
-                          className="h-12 px-4 border-gray-200 focus:border-blue-400 focus:ring-blue-400"
-                        />
-                      </div>
-
-                      <div className="space-y-2">
-                        <Label
-                          htmlFor="signup-email"
-                          className="text-sm font-medium text-gray-700"
-                        >
-                          Email
-                        </Label>
-                        <Input
-                          id="signup-email"
-                          type="email"
-                          placeholder="Enter your email"
-                          value={signupForm.email}
-                          onChange={(e) =>
-                            setSignupForm({
-                              ...signupForm,
-                              email: e.target.value,
-                            })
-                          }
-                          className="h-12 px-4 border-gray-200 focus:border-blue-400 focus:ring-blue-400"
-                        />
-                      </div>
-
-                      <div className="space-y-2">
-                        <Label
-                          htmlFor="signup-password"
-                          className="text-sm font-medium text-gray-700"
-                        >
-                          Password
-                        </Label>
-                        <Input
-                          id="signup-password"
-                          type="password"
-                          placeholder="Create a password"
-                          value={signupForm.password}
-                          onChange={(e) =>
-                            setSignupForm({
-                              ...signupForm,
-                              password: e.target.value,
-                            })
-                          }
-                          className="h-12 px-4 border-gray-200 focus:border-blue-400 focus:ring-blue-400"
-                        />
-                      </div>
-
-                      <div className="space-y-2">
-                        <Label
-                          htmlFor="signup-confirm-password"
-                          className="text-sm font-medium text-gray-700"
-                        >
-                          Confirm Password
-                        </Label>
-                        <Input
-                          id="signup-confirm-password"
-                          type="password"
-                          placeholder="Confirm your password"
-                          value={signupForm.confirmPassword}
-                          onChange={(e) =>
-                            setSignupForm({
-                              ...signupForm,
-                              confirmPassword: e.target.value,
-                            })
-                          }
-                          className="h-12 px-4 border-gray-200 focus:border-blue-400 focus:ring-blue-400"
-                        />
-                      </div>
-
-                      <Button
-                        type="submit"
-                        className="w-full h-12 bg-blue-500 hover:bg-blue-600 text-white font-medium text-base rounded-lg mt-6"
-                      >
-                        Sign Up
-                      </Button>
-
-                      <div className="text-center mt-6">
-                        <span className="text-sm text-gray-600">
-                          Already have an account?{" "}
-                        </span>
-                        <button
-                          type="button"
-                          className="text-sm text-blue-600 hover:text-blue-700 font-medium"
-                          onClick={() => {
-                            const loginTab = document.querySelector(
-                              '[value="login"]',
-                            ) as HTMLElement;
-                            loginTab?.click();
-                          }}
-                        >
-                          Login
-                        </button>
-                      </div>
-                    </form>
-                  </CardContent>
-                </Card>
-              </TabsContent>
-            </Tabs>
+            {/* Pet Image */}
+            <div className="lg:pl-4">
+              <div className="bg-gradient-to-br from-blue-100 to-blue-200 p-6 rounded-3xl">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F76bd3aeafd05477da53fceca5191bd57%2F6b7c4a0ce9bc4d948eaa6178411b7628?format=webp&width=800"
+                  alt="Happy pets with their food bowls - a golden retriever, another dog, and a cat enjoying their meals"
+                  className="w-full rounded-2xl shadow-lg"
+                />
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+
+        {/* Call to Action */}
+        <div className="text-center">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">
+            Ready to get started?
+          </h2>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 text-lg font-medium rounded-lg">
+              Explore PetFoodCustom
+            </Button>
+            <Button variant="outline" className="border-gray-300 text-gray-700 px-8 py-3 text-lg font-medium rounded-lg">
+              Sign Up / Login
+            </Button>
+          </div>
+        </div>
+      </main>
     </div>
   );
 }
