@@ -259,14 +259,18 @@ export default function Onboarding() {
             Ready to get started?
           </h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 text-lg font-medium rounded-lg">
-              Explore PetFoodCustom
+            <Button
+              onClick={() => navigate("/dashboard")}
+              className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 text-lg font-medium rounded-lg"
+            >
+              Enter Dashboard
             </Button>
             <Button
+              onClick={() => navigate("/")}
               variant="outline"
               className="border-gray-300 text-gray-700 px-8 py-3 text-lg font-medium rounded-lg"
             >
-              Sign Up / Login
+              Back to Login
             </Button>
           </div>
         </div>
