@@ -8,7 +8,7 @@ export default function Dashboard() {
       {/* Sidebar */}
       <div className="w-64 bg-white border-r border-gray-200 flex flex-col">
         {/* Header */}
-        <div className="bg-orange-500 px-6 py-4 flex items-center gap-2">
+        <div className="bg-blue-500 px-6 py-4 flex items-center gap-2">
           <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
             <path d="M12 2C12 2 15 5 15 8.5C15 10.5 13.5 12 12 12C10.5 12 9 10.5 9 8.5C9 5 12 2 12 2ZM7 9C7 9 9 11 9 13C9 14.1 8.1 15 7 15C5.9 15 5 14.1 5 13C5 11 7 9 7 9ZM17 9C17 9 19 11 19 13C19 14.1 18.1 15 17 15C15.9 15 15 14.1 15 13C15 11 17 9 17 9ZM4 17C4 17 6 19 6 21C6 22.1 5.1 23 4 23C2.9 23 2 22.1 2 21C2 19 4 17 4 17ZM20 17C20 17 22 19 22 21C22 22.1 21.1 23 20 23C18.9 23 18 22.1 18 21C18 19 20 17 20 17Z"/>
           </svg>
@@ -20,7 +20,7 @@ export default function Dashboard() {
           <input
             type="text"
             placeholder="Search recipes, ingredients, or pet food..."
-            className="w-full px-3 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-orange-500"
+            className="w-full px-3 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
 
@@ -28,7 +28,7 @@ export default function Dashboard() {
         <nav className="flex-1 p-4">
           <ul className="space-y-2">
             <li>
-              <a href="#" className="flex items-center gap-3 px-3 py-2 bg-orange-50 text-orange-600 rounded-lg font-medium">
+              <a href="#" className="flex items-center gap-3 px-3 py-2 bg-blue-50 text-blue-600 rounded-lg font-medium">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
                 </svg>
@@ -97,17 +97,17 @@ export default function Dashboard() {
         {/* Bottom Actions */}
         <div className="p-4 border-t border-gray-100">
           <div className="flex gap-2 mb-4">
-            <Button size="sm" className="flex-1 bg-orange-100 text-orange-600 hover:bg-orange-200 text-xs">
+            <Button size="sm" className="flex-1 bg-blue-100 text-blue-600 hover:bg-blue-200 text-xs">
               DOG
             </Button>
-            <Button size="sm" className="flex-1 bg-orange-100 text-orange-600 hover:bg-orange-200 text-xs">
+            <Button size="sm" className="flex-1 bg-blue-100 text-blue-600 hover:bg-blue-200 text-xs">
               CAT
             </Button>
-            <Button size="sm" className="flex-1 bg-orange-100 text-orange-600 hover:bg-orange-200 text-xs">
+            <Button size="sm" className="flex-1 bg-blue-100 text-blue-600 hover:bg-blue-200 text-xs">
               BIRD
             </Button>
           </div>
-          <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white mb-3">
+          <Button className="w-full bg-blue-500 hover:bg-blue-600 text-white mb-3">
             New Recipe
           </Button>
           <Button variant="outline" className="w-full text-gray-600 border-gray-300">
