@@ -36,7 +36,7 @@ export default function Onboarding() {
         </div>
 
         {/* Features Section */}
-        <div className="grid md:grid-cols-3 gap-8 mb-20">
+        <div className="grid md:grid-cols-3 gap-6 mb-20">
           {/* Customize Pet Food */}
           <Card className="text-center p-8 border-0 shadow-sm bg-white">
             <CardContent className="pt-6">
