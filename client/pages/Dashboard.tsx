@@ -128,7 +128,7 @@ export default function Dashboard() {
         <header className="bg-white border-b border-gray-200 px-6 py-4">
           <div className="flex items-center justify-between">
             <h1 className="text-2xl font-bold text-gray-900">
-              Welcome back, <span className="text-orange-500">human</span>!
+              Welcome back, <span className="text-blue-500">human</span>!
             </h1>
             <div className="text-sm text-gray-600">
               Here's everything you need to keep your furry friend happy and healthy.
@@ -154,8 +154,8 @@ export default function Dashboard() {
                       <h3 className="text-xl font-semibold text-gray-900">Max's Meal Plan</h3>
                       <p className="text-gray-600">Next delivery: June 15, 2023</p>
                       <div className="flex items-center gap-2 mt-1">
-                        <div className="w-32 bg-orange-200 rounded-full h-2">
-                          <div className="bg-orange-500 h-2 rounded-full w-2/3"></div>
+                        <div className="w-32 bg-blue-200 rounded-full h-2">
+                          <div className="bg-blue-500 h-2 rounded-full w-2/3"></div>
                         </div>
                         <span className="text-sm text-gray-600">65% remaining</span>
                       </div>
@@ -274,7 +274,7 @@ export default function Dashboard() {
                     <p className="text-xs text-gray-600">Fiber</p>
                   </div>
                 </div>
-                <Button className="w-full mt-4 bg-orange-500 hover:bg-orange-600">
+                <Button className="w-full mt-4 bg-blue-500 hover:bg-blue-600">
                   Adjust Nutrition
                 </Button>
               </CardContent>
