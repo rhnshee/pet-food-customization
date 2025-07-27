@@ -218,11 +218,13 @@ export default function Onboarding() {
 
             {/* Pet Image */}
             <div className="lg:pl-4">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F76bd3aeafd05477da53fceca5191bd57%2F0ff658e9f9d748419919ba8470a655b7?format=webp&width=800"
-                alt="Happy pets with their food bowls - a golden retriever, another dog, and a cat enjoying their meals"
-                className="w-full rounded-2xl shadow-lg"
-              />
+              <div className="bg-gradient-to-br from-blue-100 to-blue-200 p-6 rounded-3xl">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F76bd3aeafd05477da53fceca5191bd57%2F0ff658e9f9d748419919ba8470a655b7?format=webp&width=800"
+                  alt="Happy pets with their food bowls - a golden retriever, another dog, and a cat enjoying their meals"
+                  className="w-full rounded-2xl shadow-lg"
+                />
+              </div>
             </div>
           </div>
         </div>
