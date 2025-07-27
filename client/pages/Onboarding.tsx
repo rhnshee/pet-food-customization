@@ -38,8 +38,8 @@ export default function Onboarding() {
         {/* Features Section */}
         <div className="grid md:grid-cols-3 gap-6 mb-20">
           {/* Customize Pet Food */}
-          <Card className="text-center p-8 border-0 shadow-sm bg-white">
-            <CardContent className="pt-6">
+          <Card className="text-center p-6 border-0 shadow-sm bg-white hover:shadow-md transition-shadow">
+            <CardContent className="pt-4">
               <div
                 className="w-20 h-20 mx-auto mb-6 bg-blue-100 rounded-2xl flex items-center justify-center"
                 style={{
