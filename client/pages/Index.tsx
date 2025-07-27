@@ -9,11 +9,17 @@ export default function Index() {
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 flex items-center justify-center">
-              <svg className="w-6 h-6 text-orange-500" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2C12 2 15 5 15 8.5C15 10.5 13.5 12 12 12C10.5 12 9 10.5 9 8.5C9 5 12 2 12 2ZM7 9C7 9 9 11 9 13C9 14.1 8.1 15 7 15C5.9 15 5 14.1 5 13C5 11 7 9 7 9ZM17 9C17 9 19 11 19 13C19 14.1 18.1 15 17 15C15.9 15 15 14.1 15 13C15 11 17 9 17 9ZM4 17C4 17 6 19 6 21C6 22.1 5.1 23 4 23C2.9 23 2 22.1 2 21C2 19 4 17 4 17ZM20 17C20 17 22 19 22 21C22 22.1 21.1 23 20 23C18.9 23 18 22.1 18 21C18 19 20 17 20 17Z"/>
+              <svg
+                className="w-6 h-6 text-orange-500"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 2C12 2 15 5 15 8.5C15 10.5 13.5 12 12 12C10.5 12 9 10.5 9 8.5C9 5 12 2 12 2ZM7 9C7 9 9 11 9 13C9 14.1 8.1 15 7 15C5.9 15 5 14.1 5 13C5 11 7 9 7 9ZM17 9C17 9 19 11 19 13C19 14.1 18.1 15 17 15C15.9 15 15 14.1 15 13C15 11 17 9 17 9ZM4 17C4 17 6 19 6 21C6 22.1 5.1 23 4 23C2.9 23 2 22.1 2 21C2 19 4 17 4 17ZM20 17C20 17 22 19 22 21C22 22.1 21.1 23 20 23C18.9 23 18 22.1 18 21C18 19 20 17 20 17Z" />
               </svg>
             </div>
-            <span className="text-xl font-bold text-gray-800">PetFoodCustom</span>
+            <span className="text-xl font-bold text-gray-800">
+              PetFoodCustom
+            </span>
           </div>
           <div className="flex items-center gap-4">
             <Button variant="ghost" className="text-gray-600">
@@ -43,17 +49,20 @@ export default function Index() {
               <div
                 className="w-20 h-20 mx-auto mb-6 bg-blue-100 rounded-2xl flex items-center justify-center"
                 style={{
-                  backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F76bd3aeafd05477da53fceca5191bd57%2F246568aec982492f8d1dbcdf1b0ff488)',
-                  backgroundRepeat: 'no-repeat',
-                  backgroundPosition: 'center',
-                  backgroundSize: 'cover'
+                  backgroundImage:
+                    "url(https://cdn.builder.io/api/v1/image/assets%2F76bd3aeafd05477da53fceca5191bd57%2F246568aec982492f8d1dbcdf1b0ff488)",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
                 }}
               />
               <h3 className="text-xl font-semibold text-gray-900 mb-4">
                 Customize Pet Food
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Create personalized meal plans based on your pet's breed, age, weight, and dietary needs. Choose from premium ingredients for optimal nutrition.
+                Create personalized meal plans based on your pet's breed, age,
+                weight, and dietary needs. Choose from premium ingredients for
+                optimal nutrition.
               </p>
               <div className="flex items-center justify-center gap-4 mt-6">
                 <span className="flex items-center gap-1 text-sm text-gray-500">
@@ -78,34 +87,43 @@ export default function Index() {
               <div
                 className="w-20 h-20 mx-auto mb-6 bg-blue-100 rounded-2xl flex items-center justify-center"
                 style={{
-                  backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F76bd3aeafd05477da53fceca5191bd57%2F5d0443a197874ff59333d1625b6c184a)',
-                  backgroundRepeat: 'no-repeat',
-                  backgroundPosition: 'center',
-                  backgroundSize: 'cover'
+                  backgroundImage:
+                    "url(https://cdn.builder.io/api/v1/image/assets%2F76bd3aeafd05477da53fceca5191bd57%2F5d0443a197874ff59333d1625b6c184a)",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
                 }}
               />
               <h3 className="text-xl font-semibold text-gray-900 mb-4">
                 Manage Subscriptions
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Set up flexible delivery schedules that work for you. Easily pause, skip, or modify your subscription anytime through your account dashboard.
+                Set up flexible delivery schedules that work for you. Easily
+                pause, skip, or modify your subscription anytime through your
+                account dashboard.
               </p>
               <div className="flex items-center justify-center gap-6 mt-6">
                 <div className="text-center">
                   <div className="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center mx-auto mb-1">
-                    <span className="text-red-600 text-xs font-semibold">W</span>
+                    <span className="text-red-600 text-xs font-semibold">
+                      W
+                    </span>
                   </div>
                   <span className="text-xs text-gray-500">Weekly</span>
                 </div>
                 <div className="text-center">
                   <div className="w-8 h-8 bg-yellow-100 rounded-lg flex items-center justify-center mx-auto mb-1">
-                    <span className="text-yellow-600 text-xs font-semibold">B</span>
+                    <span className="text-yellow-600 text-xs font-semibold">
+                      B
+                    </span>
                   </div>
                   <span className="text-xs text-gray-500">Bi-weekly</span>
                 </div>
                 <div className="text-center">
                   <div className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-1">
-                    <span className="text-green-600 text-xs font-semibold">M</span>
+                    <span className="text-green-600 text-xs font-semibold">
+                      M
+                    </span>
                   </div>
                   <span className="text-xs text-gray-500">Monthly</span>
                 </div>
@@ -119,17 +137,20 @@ export default function Index() {
               <div
                 className="w-20 h-20 mx-auto mb-6 bg-green-100 rounded-2xl flex items-center justify-center"
                 style={{
-                  backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F76bd3aeafd05477da53fceca5191bd57%2F5ffe82e5527e45c594acbfe5e5dd90ad)',
-                  backgroundRepeat: 'no-repeat',
-                  backgroundPosition: 'center',
-                  backgroundSize: 'cover'
+                  backgroundImage:
+                    "url(https://cdn.builder.io/api/v1/image/assets%2F76bd3aeafd05477da53fceca5191bd57%2F5ffe82e5527e45c594acbfe5e5dd90ad)",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
                 }}
               />
               <h3 className="text-xl font-semibold text-gray-900 mb-4">
                 Track Orders
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Monitor your deliveries in real-time and access your complete order history. Review past purchases and easily reorder your pet's favorites.
+                Monitor your deliveries in real-time and access your complete
+                order history. Review past purchases and easily reorder your
+                pet's favorites.
               </p>
               <div className="mt-6 bg-gray-50 rounded-lg p-4">
                 <div className="flex items-center justify-between text-sm">
@@ -157,7 +178,8 @@ export default function Index() {
               Popular Pet Food Options
             </h2>
             <p className="text-gray-600 max-w-2xl">
-              Our most loved recipes crafted with premium ingredients to keep your pets healthy and happy.
+              Our most loved recipes crafted with premium ingredients to keep
+              your pets healthy and happy.
             </p>
           </div>
 
@@ -243,7 +265,10 @@ export default function Index() {
             <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 text-lg font-medium rounded-lg">
               Explore PetFoodCustom
             </Button>
-            <Button variant="outline" className="border-gray-300 text-gray-700 px-8 py-3 text-lg font-medium rounded-lg">
+            <Button
+              variant="outline"
+              className="border-gray-300 text-gray-700 px-8 py-3 text-lg font-medium rounded-lg"
+            >
               Sign Up / Login
             </Button>
           </div>
