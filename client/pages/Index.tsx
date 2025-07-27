@@ -180,7 +180,7 @@ export default function Index() {
 
                       <Button
                         type="submit"
-                        className="w-full h-12 bg-orange-500 hover:bg-orange-600 text-white font-medium text-base rounded-lg mt-6"
+                        className="w-full h-12 bg-blue-500 hover:bg-blue-600 text-white font-medium text-base rounded-lg mt-6"
                       >
                         Login
                       </Button>
