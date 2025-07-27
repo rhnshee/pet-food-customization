@@ -189,7 +189,7 @@ export default function Index() {
               <div className="text-center">
                 <div className="w-32 h-32 mx-auto mb-3 rounded-2xl overflow-hidden shadow-sm">
                   <img
-                    src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?w=200&h=200&fit=crop&crop=center"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F76bd3aeafd05477da53fceca5191bd57%2Ffeba1bdf5c5e4aada3f6678f4dc097e8"
                     alt="Chicken & Veggie Mix"
                     className="w-full h-full object-cover"
                   />
@@ -203,7 +203,7 @@ export default function Index() {
               <div className="text-center">
                 <div className="w-32 h-32 mx-auto mb-3 rounded-2xl overflow-hidden shadow-sm">
                   <img
-                    src="https://images.unsplash.com/photo-1554168046-e3173be38f39?w=200&h=200&fit=crop&crop=center"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F76bd3aeafd05477da53fceca5191bd57%2Fea6b48e4896e4d3b9cf7cef3e2e9e88e"
                     alt="Salmon & Rice Blend"
                     className="w-full h-full object-cover"
                   />
@@ -217,7 +217,7 @@ export default function Index() {
               <div className="text-center">
                 <div className="w-32 h-32 mx-auto mb-3 rounded-2xl overflow-hidden shadow-sm">
                   <img
-                    src="https://images.unsplash.com/photo-1565727830114-19a7045a6ea8?w=200&h=200&fit=crop&crop=center"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F76bd3aeafd05477da53fceca5191bd57%2F72163233973049839acfe2c35216fc27"
                     alt="Grain-Free Turkey"
                     className="w-full h-full object-cover"
                   />
@@ -231,7 +231,7 @@ export default function Index() {
               <div className="text-center">
                 <div className="w-32 h-32 mx-auto mb-3 rounded-2xl overflow-hidden shadow-sm">
                   <img
-                    src="https://images.unsplash.com/photo-1506297515101-8c8b01ffc3c3?w=200&h=200&fit=crop&crop=center"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F76bd3aeafd05477da53fceca5191bd57%2F817b35222814442982715220ad9a3ea4"
                     alt="Tuna & Whitefish Pate"
                     className="w-full h-full object-cover"
                   />
@@ -245,9 +245,9 @@ export default function Index() {
 
             {/* Pet Image */}
             <div className="lg:pl-4">
-              <div className="bg-gradient-to-br from-blue-100 to-blue-200 p-6 rounded-3xl">
+              <div className="p-6 rounded-3xl">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F76bd3aeafd05477da53fceca5191bd57%2F6b7c4a0ce9bc4d948eaa6178411b7628?format=webp&width=800"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F76bd3aeafd05477da53fceca5191bd57%2F53e4c48b245347a88f54baaf0b8338e6"
                   alt="Happy pets with their food bowls - a golden retriever, another dog, and a cat enjoying their meals"
                   className="w-full rounded-2xl shadow-lg"
                 />
