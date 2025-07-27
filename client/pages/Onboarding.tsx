@@ -156,7 +156,7 @@ export default function Onboarding() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
             {/* Food Options Grid */}
             <div className="grid grid-cols-2 gap-4">
               <div className="text-center">
