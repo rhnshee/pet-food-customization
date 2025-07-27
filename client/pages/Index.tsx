@@ -128,7 +128,7 @@ export default function Index() {
                               username: e.target.value,
                             })
                           }
-                          className="h-12 px-4 border-gray-200 focus:border-orange-400 focus:ring-orange-400"
+                          className="h-12 px-4 border-gray-200 focus:border-blue-400 focus:ring-blue-400"
                         />
                       </div>
 
@@ -150,7 +150,7 @@ export default function Index() {
                               password: e.target.value,
                             })
                           }
-                          className="h-12 px-4 border-gray-200 focus:border-orange-400 focus:ring-orange-400"
+                          className="h-12 px-4 border-gray-200 focus:border-blue-400 focus:ring-blue-400"
                         />
                       </div>
 
@@ -238,7 +238,7 @@ export default function Index() {
                               username: e.target.value,
                             })
                           }
-                          className="h-12 px-4 border-gray-200 focus:border-orange-400 focus:ring-orange-400"
+                          className="h-12 px-4 border-gray-200 focus:border-blue-400 focus:ring-blue-400"
                         />
                       </div>
 
@@ -260,7 +260,7 @@ export default function Index() {
                               email: e.target.value,
                             })
                           }
-                          className="h-12 px-4 border-gray-200 focus:border-orange-400 focus:ring-orange-400"
+                          className="h-12 px-4 border-gray-200 focus:border-blue-400 focus:ring-blue-400"
                         />
                       </div>
 
@@ -282,7 +282,7 @@ export default function Index() {
                               password: e.target.value,
                             })
                           }
-                          className="h-12 px-4 border-gray-200 focus:border-orange-400 focus:ring-orange-400"
+                          className="h-12 px-4 border-gray-200 focus:border-blue-400 focus:ring-blue-400"
                         />
                       </div>
 
@@ -304,7 +304,7 @@ export default function Index() {
                               confirmPassword: e.target.value,
                             })
                           }
-                          className="h-12 px-4 border-gray-200 focus:border-orange-400 focus:ring-orange-400"
+                          className="h-12 px-4 border-gray-200 focus:border-blue-400 focus:ring-blue-400"
                         />
                       </div>
 
