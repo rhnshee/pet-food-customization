@@ -81,7 +81,7 @@ export default function Index() {
               <Button
                 onClick={() => navigate("/onboarding")}
                 variant="outline"
-                className="mb-4 w-full border-orange-300 text-orange-600 hover:bg-orange-50"
+                className="mb-4 w-full border-blue-300 text-blue-600 hover:bg-blue-50"
               >
                 🚀 View Demo - Explore PetFoodCustom
               </Button>
