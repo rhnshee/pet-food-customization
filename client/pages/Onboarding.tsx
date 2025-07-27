@@ -152,11 +152,11 @@ export default function Onboarding() {
               <div className="mt-6 bg-gray-50 rounded-lg p-4">
                 <div className="flex items-center justify-between text-sm">
                   <span className="text-gray-600">Order #23571</span>
-                  <span className="text-green-600 font-medium">In Transit</span>
+                  <span className="text-blue-500 font-medium">In Transit</span>
                 </div>
                 <div className="mt-2">
                   <div className="w-full bg-gray-200 rounded-full h-2">
-                    <div className="bg-green-500 h-2 rounded-full w-3/4"></div>
+                    <div className="bg-blue-500 h-2 rounded-full w-3/4"></div>
                   </div>
                   <div className="flex justify-between text-xs text-gray-500 mt-1">
                     <span>Shipped</span>
@@ -261,7 +261,7 @@ export default function Onboarding() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               onClick={() => navigate("/dashboard")}
-              className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 text-lg font-medium rounded-lg"
+              className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 text-lg font-medium rounded-lg"
             >
               Enter Dashboard
             </Button>
