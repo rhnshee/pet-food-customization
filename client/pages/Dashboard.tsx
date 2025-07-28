@@ -85,13 +85,13 @@ export default function Dashboard() {
               <input
                 type="text"
                 placeholder="Search recipes, ingredients, or pet food..."
-                className="w-full px-4 py-2 border border-gray-200 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-orange-400"
+                className="w-full px-4 py-2 border border-gray-200 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
               />
             </div>
 
             {/* Navigation Links */}
             <nav className="py-2">
-              <a href="#" className="flex items-center gap-3 px-6 py-3 text-orange-600 bg-orange-50 font-medium">
+              <a href="#" className="flex items-center gap-3 px-6 py-3 text-blue-600 bg-blue-50 font-medium">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
                 </svg>
@@ -145,22 +145,22 @@ export default function Dashboard() {
             <div className="p-4 border-t border-gray-100 space-y-3">
               {/* Pet Type Buttons */}
               <div className="flex gap-2">
-                <Button size="sm" className="flex-1 bg-orange-100 text-orange-600 hover:bg-orange-200 text-xs">
+                <Button size="sm" className="flex-1 bg-blue-100 text-blue-600 hover:bg-blue-200 text-xs">
                   DOG
                 </Button>
-                <Button size="sm" className="flex-1 bg-orange-100 text-orange-600 hover:bg-orange-200 text-xs">
+                <Button size="sm" className="flex-1 bg-blue-100 text-blue-600 hover:bg-blue-200 text-xs">
                   CAT
                 </Button>
-                <Button size="sm" className="flex-1 bg-orange-100 text-orange-600 hover:bg-orange-200 text-xs">
+                <Button size="sm" className="flex-1 bg-blue-100 text-blue-600 hover:bg-blue-200 text-xs">
                   BIRD
                 </Button>
               </div>
               
               {/* Action Buttons */}
-              <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white">
+              <Button className="w-full bg-blue-500 hover:bg-blue-600 text-white">
                 New Recipe
               </Button>
-              <Button variant="outline" className="w-full border-orange-300 text-orange-600">
+              <Button variant="outline" className="w-full border-blue-300 text-blue-600">
                 Account
               </Button>
             </div>
