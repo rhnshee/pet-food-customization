@@ -168,74 +168,93 @@ export default function Dashboard() {
         )}
       </header>
 
-      {/* Desktop Navigation Menu */}
-      <nav className="hidden lg:block bg-white border-b border-gray-200">
-        <div className="px-6">
-          <div className="flex space-x-8">
-            <a href="#" className="flex items-center gap-2 px-3 py-4 text-orange-600 border-b-2 border-orange-600 font-medium">
-              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
-              </svg>
-              Dashboard
-            </a>
-            <a href="#" className="flex items-center gap-2 px-3 py-4 text-gray-600 hover:text-orange-600 hover:border-b-2 hover:border-orange-600 transition-colors">
-              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-              </svg>
-              My Pet Meals
-            </a>
-            <a href="#" className="flex items-center gap-2 px-3 py-4 text-gray-600 hover:text-orange-600 hover:border-b-2 hover:border-orange-600 transition-colors">
-              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M12 6V4l-2-2H6a2 2 0 00-2 2v16a2 2 0 002 2h8a2 2 0 002-2V8l-4-2z"/>
-              </svg>
-              Customize Food
-            </a>
-            <a href="#" className="flex items-center gap-2 px-3 py-4 text-gray-600 hover:text-orange-600 hover:border-b-2 hover:border-orange-600 transition-colors">
-              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H4z"/>
-              </svg>
-              Subscription
-            </a>
-            <a href="#" className="flex items-center gap-2 px-3 py-4 text-gray-600 hover:text-orange-600 hover:border-b-2 hover:border-orange-600 transition-colors">
-              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-              </svg>
-              Order History
-            </a>
-            <a href="#" className="flex items-center gap-2 px-3 py-4 text-gray-600 hover:text-orange-600 hover:border-b-2 hover:border-orange-600 transition-colors">
-              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"/>
-              </svg>
-              Pet Profiles
-            </a>
-            <a href="#" className="flex items-center gap-2 px-3 py-4 text-gray-600 hover:text-orange-600 hover:border-b-2 hover:border-orange-600 transition-colors">
-              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd"/>
-              </svg>
-              Settings
-            </a>
-            <a href="#" className="flex items-center gap-2 px-3 py-4 text-gray-600 hover:text-orange-600 hover:border-b-2 hover:border-orange-600 transition-colors">
-              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd"/>
-              </svg>
-              Help & Support
-            </a>
+      <div className="flex">
+        {/* Desktop Sidebar Navigation */}
+        <aside className="hidden lg:block w-64 bg-white border-r border-gray-200 min-h-screen">
+          <nav className="p-4">
+            <ul className="space-y-2">
+              <li>
+                <a href="#" className="flex items-center gap-3 px-3 py-2 bg-orange-50 text-orange-600 rounded-lg font-medium">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                  </svg>
+                  Dashboard
+                </a>
+              </li>
+              <li>
+                <a href="#" className="flex items-center gap-3 px-3 py-2 text-gray-600 hover:bg-gray-50 rounded-lg">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                  My Pet Meals
+                </a>
+              </li>
+              <li>
+                <a href="#" className="flex items-center gap-3 px-3 py-2 text-gray-600 hover:bg-gray-50 rounded-lg">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M12 6V4l-2-2H6a2 2 0 00-2 2v16a2 2 0 002 2h8a2 2 0 002-2V8l-4-2z"/>
+                  </svg>
+                  Customize Food
+                </a>
+              </li>
+              <li>
+                <a href="#" className="flex items-center gap-3 px-3 py-2 text-gray-600 hover:bg-gray-50 rounded-lg">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H4z"/>
+                  </svg>
+                  Subscription
+                </a>
+              </li>
+              <li>
+                <a href="#" className="flex items-center gap-3 px-3 py-2 text-gray-600 hover:bg-gray-50 rounded-lg">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                  Order History
+                </a>
+              </li>
+              <li>
+                <a href="#" className="flex items-center gap-3 px-3 py-2 text-gray-600 hover:bg-gray-50 rounded-lg">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"/>
+                  </svg>
+                  Pet Profiles
+                </a>
+              </li>
+              <li>
+                <a href="#" className="flex items-center gap-3 px-3 py-2 text-gray-600 hover:bg-gray-50 rounded-lg">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd"/>
+                  </svg>
+                  Settings
+                </a>
+              </li>
+              <li>
+                <a href="#" className="flex items-center gap-3 px-3 py-2 text-gray-600 hover:bg-gray-50 rounded-lg">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd"/>
+                  </svg>
+                  Help & Support
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+
+        {/* Main Content */}
+        <main className="flex-1">
+          {/* Welcome Message */}
+          <div className="bg-white border-b border-gray-200 px-6 py-4">
+            <h1 className="text-2xl font-bold text-gray-900">
+              Welcome back, <span className="text-orange-500">human</span>!
+            </h1>
+            <p className="text-sm text-gray-600 mt-1">
+              Here's everything you need to keep your furry friend happy and healthy.
+            </p>
           </div>
-        </div>
-      </nav>
 
-      {/* Welcome Message */}
-      <div className="bg-white border-b border-gray-200 px-6 py-4">
-        <h1 className="text-2xl font-bold text-gray-900">
-          Welcome back, <span className="text-orange-500">human</span>!
-        </h1>
-        <p className="text-sm text-gray-600 mt-1">
-          Here's everything you need to keep your furry friend happy and healthy.
-        </p>
-      </div>
-
-      {/* Main Content */}
-      <div className="p-6">
+          {/* Dashboard Content */}
+          <div className="p-6">
         <div className="grid lg:grid-cols-3 gap-6 mb-8">
           {/* Max's Meal Plan */}
           <div className="lg:col-span-2">
@@ -542,6 +561,8 @@ export default function Dashboard() {
             </Card>
           </div>
         </div>
+          </div>
+        </main>
       </div>
     </div>
   );
