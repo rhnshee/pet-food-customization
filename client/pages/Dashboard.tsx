@@ -260,8 +260,8 @@ export default function Dashboard() {
           <div className="lg:col-span-2">
             <Card className="p-6 h-[306px]">
               <CardContent className="p-0">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-20 h-20 rounded-full overflow-hidden">
+                <div className="flex items-center gap-5 justify-center my-5 p-5">
+                  <div className="w-32 h-32 rounded-full overflow-hidden">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F76bd3aeafd05477da53fceca5191bd57%2F78d05bdd0a6f41bba49a6981ce6d2b86?format=webp&width=800"
                       alt="Max the dog"
