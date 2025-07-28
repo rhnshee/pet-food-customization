@@ -9,7 +9,7 @@ export default function Dashboard() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Top Header */}
-      <header className="bg-orange-400 px-6 py-3 relative">
+      <header className="bg-blue-500 px-6 py-3 relative">
         <div className="flex items-center justify-between">
           {/* Logo and Mobile Menu Button */}
           <div className="flex items-center gap-3">
@@ -45,24 +45,24 @@ export default function Dashboard() {
           <div className="hidden lg:flex items-center gap-3">
             {/* Pet Type Buttons */}
             <div className="flex gap-2">
-              <Button size="sm" className="bg-white text-orange-400 hover:bg-gray-100 text-xs px-3 py-1 rounded-full">
+              <Button size="sm" className="bg-white text-blue-500 hover:bg-gray-100 text-xs px-3 py-1 rounded-full">
                 DOG
               </Button>
-              <Button size="sm" className="bg-white text-orange-400 hover:bg-gray-100 text-xs px-3 py-1 rounded-full">
+              <Button size="sm" className="bg-white text-blue-500 hover:bg-gray-100 text-xs px-3 py-1 rounded-full">
                 CAT
               </Button>
-              <Button size="sm" className="bg-white text-orange-400 hover:bg-gray-100 text-xs px-3 py-1 rounded-full">
+              <Button size="sm" className="bg-white text-blue-500 hover:bg-gray-100 text-xs px-3 py-1 rounded-full">
                 BIRD
               </Button>
             </div>
             
             {/* New Recipe Button */}
-            <Button className="bg-white text-orange-400 hover:bg-gray-100 px-4 py-2 rounded-full">
+            <Button className="bg-white text-blue-500 hover:bg-gray-100 px-4 py-2 rounded-full">
               New Recipe
             </Button>
             
             {/* Account Button */}
-            <Button className="bg-white text-orange-400 hover:bg-gray-100 px-4 py-2 rounded-full">
+            <Button className="bg-white text-blue-500 hover:bg-gray-100 px-4 py-2 rounded-full">
               Account
             </Button>
           </div>
@@ -174,7 +174,7 @@ export default function Dashboard() {
           <nav className="p-4">
             <ul className="space-y-2">
               <li>
-                <a href="#" className="flex items-center gap-3 px-3 py-2 bg-orange-50 text-orange-600 rounded-lg font-medium">
+                <a href="#" className="flex items-center gap-3 px-3 py-2 bg-blue-50 text-blue-600 rounded-lg font-medium">
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
                   </svg>
@@ -246,7 +246,7 @@ export default function Dashboard() {
           {/* Welcome Message */}
           <div className="bg-white border-b border-gray-200 px-6 py-4">
             <h1 className="text-2xl font-bold text-gray-900">
-              Welcome back, <span className="text-orange-500">human</span>!
+              Welcome back, <span className="text-blue-500">human</span>!
             </h1>
             <p className="text-sm text-gray-600 mt-1">
               Here's everything you need to keep your furry friend happy and healthy.
@@ -258,7 +258,7 @@ export default function Dashboard() {
         <div className="grid lg:grid-cols-3 gap-6 mb-8">
           {/* Max's Meal Plan */}
           <div className="lg:col-span-2">
-            <Card className="p-6 h-[310px]">
+            <Card className="p-6 h-[380px]">
               <CardContent className="p-0">
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-16 h-16 rounded-full overflow-hidden">
@@ -269,13 +269,13 @@ export default function Dashboard() {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900">Max's Meal Plan</h3>
-                    <p className="text-gray-600">Next delivery: June 15, 2023</p>
+                    <h3 className="text-2xl font-semibold text-gray-900">Max's Meal Plan</h3>
+                    <p className="text-lg text-gray-600">Next delivery: June 15, 2023</p>
                     <div className="flex items-center gap-2 mt-1">
-                      <div className="w-32 bg-orange-200 rounded-full h-2">
-                        <div className="bg-orange-500 h-2 rounded-full w-2/3"></div>
+                      <div className="w-40 bg-blue-200 rounded-full h-3">
+                        <div className="bg-blue-500 h-3 rounded-full w-2/3"></div>
                       </div>
-                      <span className="text-sm text-gray-600">65% remaining</span>
+                      <span className="text-base text-gray-600">65% remaining</span>
                     </div>
                   </div>
                 </div>
@@ -392,7 +392,7 @@ export default function Dashboard() {
                   <p className="text-xs text-gray-600">Fiber</p>
                 </div>
               </div>
-              <Button className="w-full mt-4 bg-orange-500 hover:bg-orange-600">
+              <Button className="w-full mt-4 bg-blue-500 hover:bg-blue-600">
                 Adjust Nutrition
               </Button>
             </CardContent>
@@ -403,8 +403,8 @@ export default function Dashboard() {
         <div className="grid md:grid-cols-4 gap-4 mb-8">
           <Card className="p-6 text-center hover:shadow-md transition-shadow cursor-pointer">
             <CardContent className="p-0">
-              <div className="w-12 h-12 mx-auto mb-3 bg-orange-100 rounded-full flex items-center justify-center">
-                <svg className="w-6 h-6 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
+              <div className="w-12 h-12 mx-auto mb-3 bg-blue-100 rounded-full flex items-center justify-center">
+                <svg className="w-6 h-6 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"/>
                 </svg>
               </div>
@@ -415,8 +415,8 @@ export default function Dashboard() {
 
           <Card className="p-6 text-center hover:shadow-md transition-shadow cursor-pointer">
             <CardContent className="p-0">
-              <div className="w-12 h-12 mx-auto mb-3 bg-orange-100 rounded-full flex items-center justify-center">
-                <svg className="w-6 h-6 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
+              <div className="w-12 h-12 mx-auto mb-3 bg-blue-100 rounded-full flex items-center justify-center">
+                <svg className="w-6 h-6 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
                 </svg>
               </div>
@@ -427,8 +427,8 @@ export default function Dashboard() {
 
           <Card className="p-6 text-center hover:shadow-md transition-shadow cursor-pointer">
             <CardContent className="p-0">
-              <div className="w-12 h-12 mx-auto mb-3 bg-orange-100 rounded-full flex items-center justify-center">
-                <svg className="w-6 h-6 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
+              <div className="w-12 h-12 mx-auto mb-3 bg-blue-100 rounded-full flex items-center justify-center">
+                <svg className="w-6 h-6 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H4z"/>
                 </svg>
               </div>
@@ -439,8 +439,8 @@ export default function Dashboard() {
 
           <Card className="p-6 text-center hover:shadow-md transition-shadow cursor-pointer">
             <CardContent className="p-0">
-              <div className="w-12 h-12 mx-auto mb-3 bg-orange-100 rounded-full flex items-center justify-center">
-                <svg className="w-6 h-6 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
+              <div className="w-12 h-12 mx-auto mb-3 bg-blue-100 rounded-full flex items-center justify-center">
+                <svg className="w-6 h-6 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z"/>
                 </svg>
               </div>
@@ -455,7 +455,7 @@ export default function Dashboard() {
           <div>
             <div className="flex items-center justify-between mb-4">
               <h3 className="text-lg font-semibold text-gray-900">Recent Meals</h3>
-              <button className="text-orange-500 text-sm font-medium hover:text-orange-600">
+              <button className="text-blue-500 text-sm font-medium hover:text-blue-600">
                 View All
               </button>
             </div>
@@ -549,7 +549,7 @@ export default function Dashboard() {
                     </div>
                   </div>
 
-                  <Button className="w-full bg-orange-500 hover:bg-orange-600">
+                  <Button className="w-full bg-blue-500 hover:bg-blue-600">
                     Manage Delivery
                   </Button>
 
