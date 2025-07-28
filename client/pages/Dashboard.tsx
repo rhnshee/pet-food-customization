@@ -485,7 +485,7 @@ export default function Dashboard() {
                 </CardContent>
               </Card>
 
-              <Card className="p-4">
+              <Card className="p-4 w-[450px]">
                 <CardContent className="p-0 flex items-center gap-4">
                   <div className="w-16 h-16 rounded-lg overflow-hidden">
                     <img
