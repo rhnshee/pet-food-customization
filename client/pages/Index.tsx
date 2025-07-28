@@ -78,10 +78,11 @@ export default function Index() {
                     <path
                       d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.5 4c.83 0 1.5.67 1.5 1.5S11.33 9 10.5 9 9 8.33 9 7.5 9.67 6 10.5 6zm3 0c.83 0 1.5.67 1.5 1.5S14.33 9 13.5 9 12 8.33 12 7.5 12.67 6 13.5 6zM12 20c-1.5 0-2.91-.41-4.11-1.24C8.72 16.5 10.26 15 12 15s3.28 1.5 4.11 3.76C14.91 19.59 13.5 20 12 20zm-4.5-9C6.67 11 6 10.33 6 9.5S6.67 8 7.5 8 9 8.67 9 9.5 8.33 11 7.5 11zm9 0c-.83 0-1.5-.67-1.5-1.5S15.67 8 16.5 8 18 8.67 18 9.5 17.33 11 16.5 11z"
                       style={{
-                        backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2F76bd3aeafd05477da53fceca5191bd57%2F965ae4ea63cd4b91a80b50d51ad69863)",
+                        backgroundImage:
+                          "url(https://cdn.builder.io/api/v1/image/assets%2F76bd3aeafd05477da53fceca5191bd57%2F965ae4ea63cd4b91a80b50d51ad69863)",
                         backgroundRepeat: "no-repeat",
                         backgroundPosition: "center",
-                        backgroundSize: "cover"
+                        backgroundSize: "cover",
                       }}
                     />
                   </svg>
@@ -90,7 +91,6 @@ export default function Index() {
                   PetFoodCustom
                 </span>
               </div>
-
             </div>
 
             <Tabs defaultValue="login" className="w-full">
