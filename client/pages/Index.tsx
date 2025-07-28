@@ -90,13 +90,7 @@ export default function Index() {
                   PetFoodCustom
                 </span>
               </div>
-              <Button
-                onClick={() => navigate("/onboarding")}
-                variant="outline"
-                className="mb-4 w-full border-blue-300 text-blue-600 hover:bg-blue-50"
-              >
-                🚀 View Demo - Explore PetFoodCustom
-              </Button>
+
             </div>
 
             <Tabs defaultValue="login" className="w-full">
